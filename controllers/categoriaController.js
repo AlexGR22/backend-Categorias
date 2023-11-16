@@ -62,16 +62,3 @@ exports.deleteCategoria = async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 };
-
-// exports.deleteCategoria = async (req, res) => {
-//     try {
-//       const deletedCategoria = await CategoriaModel.delete(req.params.id);
-//       if (!deletedCategoria) {
-//         return res.status(404).json({ error: 'Producto no encontrado' });
-//       }
-//       res.status(200).json(deletedCategoria);
-//     } catch (error) {
-//       res.status(500).json({ error: 'Error al eliminar el producto' });
-//     }
-//   };
-  
